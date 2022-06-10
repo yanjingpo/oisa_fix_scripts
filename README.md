@@ -1,7 +1,7 @@
 # [oisa](https://github.com/cwfletcher/oisa.git) fix scripts for Ubuntu 20.04 LTS
 ## Ubuntu packages needed:
 ```bash
-$ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev libusb-1.0-0-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev device-tree-compiler pkg-config
+$ sudo apt-get install git autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev libusb-1.0-0-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev device-tree-compiler pkg-config
 ```
 ```bash
 export RISCV=/path/to/install/riscv/toolchain
