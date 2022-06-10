@@ -17,4 +17,5 @@ $ cd oisa_fix_script
 $ ./clone_oisa.sh
 $ ./download_init_submodules.sh
 $ ./build_install_tools.sh
+$ ./verisim_make.sh
 ```
