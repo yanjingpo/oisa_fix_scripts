@@ -7,7 +7,7 @@ $ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-d
 ```bash
 $ git clone https://github.com/yanjingpo/oisa_fix_script.git
 ```
-### Run script 
+## Run script 
 ```bash
 $ cd oisa_fix_script
 $ ./clone_oisa.sh
