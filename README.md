@@ -14,6 +14,7 @@ $ git clone https://github.com/yanjingpo/oisa_fix_script.git
 ## Run script 
 ```bash
 $ cd oisa_fix_script
+$ chmod +x clone_oisa.sh download_init_submodules.sh build_install_tools.sh verisim_make.sh
 $ ./clone_oisa.sh
 $ ./download_init_submodules.sh
 $ ./build_install_tools.sh
