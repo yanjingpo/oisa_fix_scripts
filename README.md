@@ -7,11 +7,11 @@ $ sudo apt-get install git autoconf automake autotools-dev curl libmpc-dev libmp
 $ export RISCV=/path/to/install/riscv/toolchain
 $ export PATH=$RISCV/bin:$PATH
 ```
-## Clone this repository
+## Clone this repository:
 ```bash
 $ git clone https://github.com/yanjingpo/oisa_fix_script.git
 ```
-## Run script 
+## Run script:
 ```bash
 $ cd oisa_fix_script
 $ chmod +x clone_oisa.sh download_init_submodules.sh build_install_tools.sh verisim_make.sh
