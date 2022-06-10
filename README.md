@@ -1,1 +1,16 @@
-# oisa_fix_script
+# OISA fix script for Ubuntu 20.04 LTS
+## Ubuntu packages needed:
+```bash
+$ sudo apt-get install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev libusb-1.0-0-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev device-tree-compiler pkg-config
+```
+## Clone this repository
+```bash
+$ git clone https://github.com/yanjingpo/oisa_fix_script.git
+```
+### Run script 
+```bash
+$ cd oisa_fix_script
+$ ./clone_oisa.sh
+$ ./download_init_submodules.sh
+$ ./build_install_tools.sh
+```
