@@ -1,0 +1,11 @@
+#!/bin/bash
+(cd oisa/Pre-NDSS && rm -rf torture)
+(cd oisa/Pre-NDSS/rocket-chip && rm -rf chisel3 firrtl hardfloat && rm -rf riscv-tools && rm -rf torture)
+(cd oisa/Pre-NDSS/rocket-chip && git clone https://github.com/chipsalliance/chisel3.git && cd chisel3 && git reset --hard a86e38889302662db14b932e4e0d862290c01308)
+(cd oisa/Pre-NDSS/rocket-chip && git clone https://github.com/chipsalliance/firrtl.git && cd firrtl && git reset --hard 997fb0adf99813f5eb396fdc35026ee5c185445f)
+(cd oisa/Pre-NDSS/rocket-chip && git clone https://github.com/ucb-bar/berkeley-hardfloat.git hardfloat && cd hardfloat && git reset --hard 45f5ae171a1950389f1b239b46a9e0d16ae0a6f4)
+(cd oisa/Pre-NDSS/rocket-chip && git clone https://github.com/ucb-bar/riscv-torture.git torture && cd torture && git reset --hard 77195ab12aefc373ca688e0a9c4d710c13191341 && rm -rf env && git clone https://github.com/riscv/riscv-test-env.git env && cd env && git reset --hard ce70afbf50a203be04bc326326cfa75831fe7f5d)
+(cd oisa/Pre-NDSS/rocket-chip && git clone https://github.com/riscv-software-src/riscv-tools.git && cd riscv-tools && git reset --hard f86271fe4f0b716f05dcadf1d4e47f796cb7a6d4)
+(cd oisa/Pre-NDSS/rocket-chip/riscv-tools && git submodule init && cd riscv-gnu-toolchain && git submodule update --init && rm -rf riscv-qemu && git rm riscv-qemu)
+(cd oisa/Pre-NDSS/rocket-chip/riscv-tools && git submodule update --init --recursive)
+(cd oisa/Pre-NDSS && git clone https://github.com/ucb-bar/riscv-torture.git torture && cd torture && git reset --hard d5b40475d63c7efa4896c59484a61534c0d4023c)
